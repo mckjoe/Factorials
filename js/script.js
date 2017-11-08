@@ -1,7 +1,7 @@
 var factorial = function(input) {
   total = 1;
   for (i = 2; i <= input; i++) {
-    total = total * i;
+    total *= i;
   }
   return total;
 }
