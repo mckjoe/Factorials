@@ -1,9 +1,9 @@
 var factorial = function(input) {
   total = 1;
-  for (i = 2; i <= input; i++) {
+  for (var i = 2; i <= input; i++) {
     total *= i;
   }
-  return total;
+  return total
 }
 
 $(document).ready(function() {
@@ -12,5 +12,7 @@ $(document).ready(function() {
     var input = $("#input").val();
     var result = factorial(input);
     console.log(result);
+    $(".output").text(result);
+    $("#output").show();
   });
 });
